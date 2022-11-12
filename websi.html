@@ -4,37 +4,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-* {
-  box-sizing: border-box;
-}
 
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-  padding: 20px;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 200px) {
-  .column {
-    width: 100%;
-  }
-}
 .item1 { grid-area: header; }
 .item2 { grid-area: top-left; }
 .item3 { grid-area: top-right; }
@@ -44,71 +15,97 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-areas: 'header header header header'
+						'top-left top-right bottom-left bottom-right'
+						'footer footer footer footer';
   gap: 10px;
-  background-color: #2196F3;
+  background-color: DarkGoldenRod;
   padding: 10px;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: BurlyWood;
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
 }
+@media screen and (max-width: 900px) {
+  .grid-container{
+	grid-template-areas: 'header header'
+	'top-left top-right'
+	'bottom-left bottom-right'
+	'footer footer';
+  }
+
+}
+
+@media screen and (max-width: 200px) {
+  .grid-container{
+	grid-template-areas: 'header'
+	'top-left'
+	'top-right'
+	'bottom-left'
+	'bottom-right'
+	'footer';
+  }
+}
+
+   .text{
+            align-items: center;
+            text-align: left;
+        }
 </style>
 </head>
 <body>
 
-
-  <div class="item1"><img src = "BU.png" alt = "bu icon" width="200" height="100">
-    <h1 style="display:inline;">
-      ANDREA TAFISH
-    </h1>
-  </div>
-  <div class="grid-container">
-  <div class= "row">
-      <div class = "column">
-        <div class="item2"><p style="font-size:26">Personal info</p>
-          <p>
-            hello my name is andre i love gaming bla bla bla
-          </p>
-        </div>
-      </div>
-  <div class = "column">
-    <div class="item3"><pre>BETHLEHEM university
-      Bethlehem University is a Catholic co-educational institution in the Lasallian tradition
-       whose mission is to provide quality higher education to the people of Palestine and to 
-       serve them in its role as a center for the advancement, sharing and use of knowledge.
-       The University emphasizes excellence in academic programs and the development of students
-         as committed people prepared to assume leading positions in society.
-         The University fosters shared values, moral principles, and dedication to serving
-         the common good.
-    </pre>
-  </div>  
+	<div class="grid-container">
+	  <div class="item1 text"><img src = "BU.png" alt = "bu icon" width="200" height="100">
+		<h1 style="display:inline;">
+		  ANDREA TAFISH
+		</h1>
+	  </div>
   
-  </div>
-  <div class = "column">
-    
-    <div class="item4">City BETHLEHEM
-      <pre>
-        Bethlehem is a Palestinian town south of Jerusalem in the West Bank.
-         The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination.
-          The birth is marked by an inlaid silver star in a grotto under the 6th-century
-           Church of the Nativity, which shares Manger Square with the 15th-century Church of
-            St. Catherine and the 1860 Mosque of Omar. 
-      </pre>
-    </div>
-  </div>
-  <div class = "column">
-    
-    <div class="item5">SOFTWARE ENGINEERIG
-      </div>
-    </div>
-  </div>
-</div>
-  <div class="item6">footer</div>
+        <div class="item2 text"><b>Personal Info </b><br>
+         
+            hello my name is andre i love gaming and i sit and dance all day 
+         
+        </div>
 
+
+		<div class="item3 text"><b>Bethlehem University</b><br>
+		  Bethlehem University is a Catholic co-educational institution in the Lasallian tradition
+		   whose mission is to provide quality higher education to the people of Palestine and to 
+		   serve them in its role as a center for the advancement, sharing and use of knowledge.
+		   The University emphasizes excellence in academic programs and the development of students
+			 as committed people prepared to assume leading positions in society.
+			 The University fosters shared values, moral principles, and dedication to serving
+			 the common good.
+	
+	   </div>  
+
+
+		
+		<div class="item4 text"><b>City Bethlehem</b><br>
+		
+			Bethlehem is a Palestinian town south of Jerusalem in the West Bank.
+			 The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination.
+			  The birth is marked by an inlaid silver star in a grotto under the 6th-century
+			   Church of the Nativity, which shares Manger Square with the 15th-century Church of
+				St. Catherine and the 1860 Mosque of Omar. 
+		
+		</div>
+
+
+    
+		<div class="item5 text"><b>SOFTWARE ENGINEERING</b><br>
+		Software engineering is a systematic engineering approach to software development.
+		A software engineer is a person who applies the principles of software engineering to design,
+		develop, maintain, test, and evaluate computer software.</div>
+
+
+
+	  <div class="item6">Prepared by Andrea Tafish 202006066</div>
+	</div>
 
 </body>
 </html>
