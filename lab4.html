@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: top-left; }
+.item3 { grid-area: top-right; }
+.item4 { grid-area: bottom-left; }
+.item5 { grid-area: bottom-right }
+.item6 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'top-left top-left top-left top-right top-right top-right'
+    'bottom-left bottom-left bottom-left bottom-right bottom-right bottom-right'
+    'footer footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+
+<div class="grid-container">
+      <div class="item1"><img src = "BU.png" alt = "bu icon" width="200" height="100">
+        <h1 style="display:inline;">
+            ANDREA TAFISH
+        </h1>
+    </div>
+        <div class="item2"><p style="font-size:26">Personal info</p>
+      <p>
+          hello my name is andre i love gaming bla bla bla
+      </p>
+    </div>
+    <div class="item3"><pre>MAJOR
+      
+  im a 3rd year software engineer student
+  and we're taking courses this semester like database ,
+   web technologies , user experience and interaction with 
+   the users and software elicitaion
+    </pre>
+  </div>  
+  
+    
+    <div class="item4">City BETHLEHEM
+      <pre>
+        Bethlehem is a Palestinian town south of Jerusalem in the West Bank.
+         The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination.
+          The birth is marked by an inlaid silver star in a grotto under the 6th-century
+           Church of the Nativity, which shares Manger Square with the 15th-century Church of
+            St. Catherine and the 1860 Mosque of Omar. 
+      </pre>
+  </div>
+    
+    <div class="item5">SOFTWARE ENGINEERIG<pre>
+      
+    </pre>
+  </div>
+  <div class="item6">footer</div>
+
+</div>
+
+</body>
+</html>
