@@ -1,111 +1,98 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .item1 {
+        grid-area: header;
+      }
 
-<style>
+      .item2 {
+        grid-area: top-left;
+      }
 
+      .item3 {
+        grid-area: top-right;
+      }
 
-.item1 { grid-area: header; }
-.item2 { grid-area: top-left; }
-.item3 { grid-area: top-right; }
-.item4 { grid-area: bottom-left; }
-.item5 { grid-area: bottom-right }
-.item6 { grid-area: footer; }
+      .item4 {
+        grid-area: bottom-left;
+      }
 
-.grid-container {
-  display: grid;
-  grid-template-areas: 'header header header header'
-						'top-left top-right bottom-left bottom-right'
-						'footer footer footer footer';
-  gap: 10px;
-  background-color: DarkGoldenRod;
-  padding: 10px;
-}
+      .item5 {
+        grid-area: bottom-right
+      }
 
-.grid-container > div {
-  background-color: BurlyWood;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
-@media screen and (max-width: 900px) {
-  .grid-container{
-	grid-template-areas: 'header header'
-	'top-left top-right'
-	'bottom-left bottom-right'
-	'footer footer';
-  }
+      .item6 {
+        grid-area: footer;
+      }
 
-}
+      .grid-container {
+        display: grid;
+        grid-template-areas: 'header header header header'
+          'top-left top-right bottom-left bottom-right'
+          'footer footer footer footer';
+        gap: 10px;
+        background-color: DarkGoldenRod;
+        padding: 10px;
+      }
 
-@media screen and (max-width: 200px) {
-  .grid-container{
-	grid-template-areas: 'header'
-	'top-left'
-	'top-right'
-	'bottom-left'
-	'bottom-right'
-	'footer';
-  }
-}
+      .grid-container>div {
+        background-color: BurlyWood;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+      }
 
-   .text{
-            align-items: center;
-            text-align: left;
+      @media screen and (max-width: 900px) {
+        .grid-container {
+          grid-template-areas: 'header header'
+            'top-left top-right'
+            'bottom-left bottom-right'
+            'footer footer';
         }
-</style>
-</head>
-<body>
+      }
 
-	<div class="grid-container">
-	  <div class="item1 text"><img src = "BU.png" alt = "bu icon" width="200" height="100">
-		<h1 style="display:inline;">
-		  ANDREA TAFISH
-		</h1>
-	  </div>
-  
-        <div class="item2 text"><b>Personal Info </b><br>
-         
-            hello my name is andre i love gaming and i sit and dance all day 
-         
-        </div>
+      @media screen and (max-width: 200px) {
+        .grid-container {
+          grid-template-areas: 'header'
+            'top-left'
+            'top-right'
+            'bottom-left'
+            'bottom-right'
+            'footer';
+        }
+      }
 
-
-		<div class="item3 text"><b>Bethlehem University</b><br>
-		  Bethlehem University is a Catholic co-educational institution in the Lasallian tradition
-		   whose mission is to provide quality higher education to the people of Palestine and to 
-		   serve them in its role as a center for the advancement, sharing and use of knowledge.
-		   The University emphasizes excellence in academic programs and the development of students
-			 as committed people prepared to assume leading positions in society.
-			 The University fosters shared values, moral principles, and dedication to serving
-			 the common good.
-	
-	   </div>  
-
-
-		
-		<div class="item4 text"><b>City Bethlehem</b><br>
-		
-			Bethlehem is a Palestinian town south of Jerusalem in the West Bank.
-			 The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination.
-			  The birth is marked by an inlaid silver star in a grotto under the 6th-century
-			   Church of the Nativity, which shares Manger Square with the 15th-century Church of
-				St. Catherine and the 1860 Mosque of Omar. 
-		
-		</div>
-
-
-    
-		<div class="item5 text"><b>SOFTWARE ENGINEERING</b><br>
-		Software engineering is a systematic engineering approach to software development.
-		A software engineer is a person who applies the principles of software engineering to design,
-		develop, maintain, test, and evaluate computer software.</div>
-
-
-
-	  <div class="item6">Prepared by Andrea Tafish 202006066</div>
-	</div>
-
-</body>
+      .text {
+        align-items: center;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1 text">
+        <img src="BU.png" alt="bu icon" width="200" height="100">
+        <h1 style="display:inline;"> ANDREA TAFISH </h1>
+      </div>
+      <div class="item2 text">
+        <b>Personal Info </b>
+        <br> Hello my name is andrea, born in bethlehem city in 2002 and rolled in terra santa school for boys
+      </div>
+      <div class="item3 text">
+        <b>Bethlehem University</b>
+        <br> Bethlehem University is a Catholic co-educational institution in the Lasallian tradition whose mission is to provide quality higher education to the people of Palestine and to serve them in its role as a center for the advancement, sharing and use of knowledge. The University emphasizes excellence in academic programs and the development of students as committed people prepared to assume leading positions in society. The University fosters shared values, moral principles, and dedication to serving the common good.
+      </div>
+      <div class="item4 text">
+        <b>City Bethlehem</b>
+        <br> Bethlehem is a Palestinian town south of Jerusalem in the West Bank. The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination. The birth is marked by an inlaid silver star in a grotto under the 6th-century Church of the Nativity, which shares Manger Square with the 15th-century Church of St. Catherine and the 1860 Mosque of Omar.
+      </div>
+      <div class="item5 text">
+        <b>SOFTWARE ENGINEERING</b>
+        <br> Software engineering is a systematic engineering approach to software development. A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software.
+      </div>
+      <div class="item6">Prepared by Andrea Tafish 202006066</div>
+    </div>
+  </body>
 </html>
