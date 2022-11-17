@@ -4,25 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
-/* Create four equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 25%;
-}
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 900px) {
-  .column {
-    width: 50%;
-  }
-}
-
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
 .item1 { grid-area: header; }
 .item2 { grid-area: top-left; }
 .item3 { grid-area: top-right; }
@@ -38,12 +20,13 @@
     'bottom-left bottom-left bottom-left bottom-right bottom-right bottom-right'
     'footer footer footer footer footer footer';
   gap: 10px;
-  background-color: #2196F3;
+  background-color: #336e9e;
   padding: 10px;
+  color: white;
 }
 
 .grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(3, 4, 10, 0.8);
   text-align: center;
   padding: 20px 0;
   font-size: 30px;
@@ -59,36 +42,34 @@
             ANDREA TAFISH
         </h1>
     </div>
-        <div class="item2"><p style="font-size:26">Personal info</p>
-      <p>
+        <div class="item2"><span style="font-size:26">Personal info</span><br>
           hello my name is andre i love gaming bla bla bla
-      </p>
     </div>
-    <div class="item3"><pre>MAJOR
+    <div class="item3">MAJOR<br>
       
   im a 3rd year software engineer student
   and we're taking courses this semester like database ,
    web technologies , user experience and interaction with 
    the users and software elicitaion
-    </pre>
   </div>  
   
     
-    <div class="item4">City BETHLEHEM
-      <pre>
+    <div class="item4">City Bethlehem <br>
         Bethlehem is a Palestinian town south of Jerusalem in the West Bank.
          The biblical birthplace of Jesus, it’s a major Christian pilgrimage destination.
           The birth is marked by an inlaid silver star in a grotto under the 6th-century
            Church of the Nativity, which shares Manger Square with the 15th-century Church of
             St. Catherine and the 1860 Mosque of Omar. 
-      </pre>
   </div>
     
-    <div class="item5">SOFTWARE ENGINEERIG<pre>
+    <div class="item5">SOFTWARE ENGINEERIG<br>
+        Software engineering is a systematic engineering approach to software development. 
+        A software engineer is a person who applies the principles of software engineering
+         to design, develop, maintain, test, and evaluate computer software.
       
-    </pre>
+    
   </div>
-  <div class="item6">footer</div>
+  <div class="item6">Done by Andrea Tafish 202006066</div>
 
 </div>
 
