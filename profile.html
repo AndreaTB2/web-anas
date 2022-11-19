@@ -99,6 +99,11 @@
         font-size: 30px;
       }
 
+      .item1 div img {
+        width: 200px;
+        height: 200px;
+      }
+
       .perso {
         border-radius: 70px;
         background-image: linear-gradient(to right, rgba(88, 51, 100, 0.575), rgba(44, 110, 143, 0.438));
@@ -158,6 +163,17 @@
         box-shadow: 1px 1px 25px 1px rgba(0, 0, 0, 0.562);
         padding: 10px;
         font-size: 16px;
+      }
+
+      .grid-container span {
+        font-family: 'Times New Roman', serif;
+        font-size: 25px;
+      }
+
+      .grid-container span span {
+        color: rgba(255, 251, 0, 0.753);
+        font-family: 'Times New Roman', serif;
+        font-size: 50px;
       }
 
       #div1:hover {
@@ -306,12 +322,24 @@
         padding-top: 100px;
       }
 
+      h1,
+      h2,
+      h3 {
+        color: rgb(255, 255, 255);
+        font-family: 'Charm';
+        font-size: 52px;
+      }
+
       @media screen and (max-width: 900px) {
+        header {
+          background-size: 50%;
+        }
+
         .grid-container {
           grid-template-columns: auto;
         }
 
-        .grid-container >div{
+        .grid-container>div {
           font-size: 12px;
         }
 
@@ -321,26 +349,69 @@
             'menu main'
             'right right';
         }
-        .slider img{
+
+        .slider img {
           width: 80%;
           height: 450px;
         }
       }
 
       @media screen and (max-width: 750px) {
+        header {
+          background-size: 60%;
+        }
 
-        .slider img{
+        .perso h1,
+        h2 {
+          font-size: 35px;
+        }
+
+        .grid-container span {
+          font-size: 15px;
+        }
+
+        .grid-container span span {
+          font-size: 25px;
+        }
+
+        .grid-footer div,
+        h3 {
+          font-size: 20px;
+        }
+
+        table {
+          font-size: 15px;
+        }
+
+        .item1 div img {
+          width: 150px;
+          height: 150px;
+        }
+
+        #item3 {
+          padding-top: 10px;
+        }
+
+        .slider img {
           width: 85%;
           height: 400px;
         }
-        .slider{
+
+        .slider {
           width: 70%;
         }
 
+        img {
+          width: 15px;
+          height: 15px;
+        }
       }
 
-
       @media screen and (max-width: 600px) {
+        header {
+          background-size: 70%;
+        }
+
         .grid-footer {
           grid-template-areas:
             'menu'
@@ -348,43 +419,73 @@
             'right';
         }
 
-        .grid-container >div{
+        .grid-footer div,
+        h3 {
+          font-size: 15px;
+        }
+
+        .grid-container>div {
           font-size: 10px;
         }
 
-        .slider img{
+        .item1 div img {
+          width: 100px;
+          height: 100px;
+        }
+
+        table {
+          font-size: 12px;
+        }
+
+        .slider img {
           width: 95%;
           height: 350px;
         }
 
-        .slider{
+        .slider {
           width: 70%;
         }
 
-        #div3:hover{
-          background-position-x: -300px ;
+        #div3:hover {
+          background-position-x: -300px;
         }
       }
 
       @media screen and (max-width: 450px) {
-        .grid-container >div{
-          font-size: 8px;
+        header {
+          background-size: 90%;
         }
 
-        .slider img{
+        .perso h1,
+        h2 {
+          font-size: 25px;
+        }
+
+        .grid-container span {
+          font-size: 12px;
+        }
+
+        .grid-container span span {
+          font-size: 20px;
+        }
+
+        table {
+          font-size: 10px;
+        }
+
+        .slider img {
           width: 100%;
           height: 250px;
         }
 
-        .slider{
+        .slider {
           width: 50%;
         }
 
-        #div3:hover{
-          background-position-x: -550px ;
+        #div3:hover {
+          background-position-x: -550px;
         }
       }
-
     </style>
   </head>
   <body>
@@ -409,7 +510,7 @@
         <video autoplay muted loop id="myVideo">
           <source src="PAINT.mp4" type="video/mp4"> Your browser does not support HTML5 video.
         </video>
-        <h1 style="color: rgb(255, 255, 255); font-family: 'Charm'; font-size: 52px;">Personal Profile for Andrea Tafesh -202006066</h1>
+        <h1>Personal Profile for Andrea Tafesh -202006066</h1>
         <div class="container">
           <div class="slider">
             <figure>
@@ -427,11 +528,11 @@
               </div>
             </figure>
           </div>
-          <h2 id="aboutme" style="color: rgb(255, 255, 255); font-family: 'Charm'; font-size: 52px;"> About me</h2>
+          <h2 id="aboutme"> About me</h2>
           <div class="grid-container">
             <div id="div1">
-              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
-                <span style="color:rgba(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> Personal INFO <br>
+              <span>
+                <span> Personal INFO <br>
                 </span> Full name : Andrea Sami George Tafish <br>
                 <img src="clipart129148.png" alt="phone"> Major: Software Engineering <br>
                 <img src="phone-icon-png--clipart-best-17.png" alt="phone">Home Phone: 022747913 <br>
@@ -440,18 +541,18 @@
                 <img src="home-2-512.png" alt="home">Location: Bethlehem, Palestine </span>
             </div>
             <div id="div2">
-              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
-                <span style="color:rgb(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> Hobbies <br>
+              <span>
+                <span> Hobbies <br>
                 </span> I like gaming, scouting, watching TV, listening to music, jogging, card games. </span>
             </div>
             <div id="div3">
-              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
-                <span style="color:rgb(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> University life <br>
+              <span>
+                <span> University life <br>
                 </span> I chose BU, because from a future perspective Bethlehem university satisfied my needs where I want to be and what I want to be in my future career, and from a personal perspective I’ am comfortable with the general atmosphere it provides and the religious/political parties it’s involved in, and finally I chose this university to be close to my home and life which makes travelling and things easier to me making it the perfect university to me. </span>
             </div>
             <div id="div4">
-              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
-                <span style="color:rgb(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> Software Engineering <br>
+              <span>
+                <span> Software Engineering <br>
                 </span> Software engineering is a systematic engineering approach to software development. A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software. </span>
             </div>
           </div>
@@ -479,11 +580,11 @@
             <li></li>
           </ul>
           <div> QR code for Snapchat <br>
-            <img src="314415552_1554196364990140_5087000762065906209_n.jpg" alt="snap" style=" width: 200px; height: 200px;">
+            <img src="314415552_1554196364990140_5087000762065906209_n.jpg" alt="snap">
           </div>
         </div>
         <div class="item2" id="item2">
-          <h3 id="weblabs" style="color: rgb(255, 255, 255); font-family: 'Charm'; font-size: 52px;"> Web Labs</h3>
+          <h3 id="weblabs"> Web Labs</h3>
           <table>
             <tr>
               <th>Time course</th>
@@ -491,39 +592,39 @@
             </tr>
             <tr>
               <td>Week1</td>
-              <td><a href="lab.html" target="_blank">Lab1
-              </a></td>
+              <td>
+                <a href="lab.html" target="_blank">Lab1 </a>
+              </td>
             </tr>
             <tr>
               <td>Week2</td>
-              <td><a href="lab2.html" target="_blank">
-                Lab2
-              </a>
+              <td>
+                <a href="lab2.html" target="_blank"> Lab2 </a>
               </td>
             </tr>
             <tr>
               <td>Week3</td>
-              <td><a href="lab3.html" target="_blank">Lab3
-
-              </a></td>
+              <td>
+                <a href="lab3.html" target="_blank">Lab3 </a>
+              </td>
             </tr>
             <tr>
               <td>Week4</td>
-              <td><a href="lab4.html" target="_blank">Lab4
-
-              </a></td>
+              <td>
+                <a href="lab4.html" target="_blank">Lab4 </a>
+              </td>
             </tr>
             <tr>
               <td>Week5</td>
-              <td><a href="lab5.html" target="_blank">Lab5
-
-              </a></td>
+              <td>
+                <a href="lab5.html" target="_blank">Lab5 </a>
+              </td>
             </tr>
             <tr>
               <td>Week6</td>
-              <td><a href="lab6.html" target="_blank">
-                Lab6
-              </a></td>
+              <td>
+                <a href="lab6.html" target="_blank"> Lab6 </a>
+              </td>
             </tr>
           </table>
         </div>
