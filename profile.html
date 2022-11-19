@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Charm' rel='stylesheet'>
+    <title> Home </title>
+    <link rel="icon" type="image/x-icon" href="gamer-mascot-geek-boy-esports-logo-avatar-with-headphones-glasses-cartoon-character_8169-228.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      header {
+        background-image: url(kindpng_761990.png);
+        background-size: 40%;
+        background-color: #07213f;
+        background-repeat: repeat;
+        padding: 40px;
+        font-size: 15px;
+      }
+
+      #ulHeader {
+        border-radius: 50px;
+        list-style-type: none;
+        margin: 0px;
+        padding: 5px;
+        overflow: hidden;
+        background-image: linear-gradient(to right, rgba(183, 10, 226, 0.822), rgba(219, 166, 20, 0.801));
+      }
+
+      #ulSection {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        border-radius: 55px;
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: all 0.3s ease 0s;
+      }
+
+      #ulHeader li a:hover {
+        background-color: rgb(28, 168, 187);
+        transition: all 0.3 ease 0s;
+      }
+
+      #ulSection li a:hover {
+        background-color: rgba(0, 0, 0, 0.733);
+        transition: all 0.3 ease 0s;
+      }
+
+      .item1 {
+        grid-area: menu;
+      }
+
+      .item2 {
+        grid-area: main;
+      }
+
+      .item3 {
+        grid-area: right;
+      }
+
+      .grid-footer {
+        display: grid;
+        grid-template-areas:
+          'menu menu main main main right'
+          'menu menu main main main right';
+        gap: 10px;
+        background-image: linear-gradient(to right, rgba(25, 179, 199, 0.733), rgba(218, 50, 21, 0.801));
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        font-family: 'Charm';
+        box-shadow: 1px 1px 100px 50px rgba(0, 0, 0, 0.836);
+      }
+
+      .grid-footer>div {
+        border-radius: 50px;
+        background-size: cover;
+        text-align: center;
+        padding: 20px 0;
+        background-color: rgba(0, 0, 0, 0.342);
+        box-shadow: 1px 1px 200px 20px rgba(10, 10, 6, 0.678);
+        font-size: 30px;
+      }
+
+      .perso {
+        border-radius: 70px;
+        background-image: linear-gradient(to right, rgba(88, 51, 100, 0.575), rgba(44, 110, 143, 0.438));
+        box-shadow: 1px 1px 100px 10px rgba(0, 0, 0, 0.767);
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .container {
+        display: grid;
+        grid-template-rows: auto auto;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .slider {
+        height: 80%;
+        overflow: hidden;
+        margin: 50px;
+        padding: 50px;
+        border: 1px solid rgba(151, 86, 86, 0);
+      }
+
+      figure {
+        position: relative;
+        left: 0;
+        width: 400%;
+        animation: 15s slide infinite;
+      }
+
+      .slide {
+        position: relative;
+        width: 25%;
+        float: left;
+      }
+
+      .slide img {
+        box-shadow: 1px 1px 50px 2px rgba(0, 0, 0, 0.815);
+        border-radius: 25px;
+        border: 1px double rgba(0, 0, 0, 0.404);
+        width: 60%;
+        height: 600px;
+        align-items: center;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 50px;
+        text-align: center;
+        color: rgb(255, 255, 255);
+      }
+
+      .grid-container>div {
+        border-radius: 20px;
+        box-shadow: 1px 1px 25px 1px rgba(0, 0, 0, 0.562);
+        padding: 10px;
+        font-size: 16px;
+      }
+
+      #div1:hover {
+        background-image: url(104284435-GettyImages-533543800.jpg);
+        background-size: cover;
+        transition: 1s;
+        background-position-y: -100px;
+        background-repeat: repeat;
+        color: rgb(245, 245, 245);
+      }
+
+      #div2:hover {
+        background-image: url(hobby-money.png);
+        background-size: cover;
+        transition: 1s;
+        background-position-y: -100px;
+        background-repeat: repeat;
+        color: rgb(210, 37, 216);
+      }
+
+      #div3:hover {
+        background-image: url(download-1528894758.jpg);
+        background-size: cover;
+        background-position-y: -100px;
+        transition: 1s;
+        background-repeat: repeat;
+        color: rgb(0, 0, 0);
+      }
+
+      #div4:hover {
+        background-image: url(coding.jpg);
+        background-size: cover;
+        background-position-y: -100px;
+        transition: 2s;
+        background-repeat: repeat;
+        color: rgb(255, 255, 255);
+      }
+
+      @keyframes slide {
+        0% {
+          left: 0;
+        }
+
+        10% {
+          left: 0;
+        }
+
+        20% {
+          left: -100%;
+        }
+
+        30% {
+          left: -100%;
+        }
+
+        40% {
+          left: -200%;
+        }
+
+        50% {
+          left: -200%;
+        }
+
+        55% {
+          left: -300%;
+        }
+
+        65% {
+          left: -300%;
+        }
+
+        66% {
+          left: -200%;
+        }
+
+        74% {
+          left: -200%;
+        }
+
+        75% {
+          left: -100%;
+        }
+
+        85% {
+          left: -100%;
+        }
+
+        90% {
+          left: 0;
+        }
+
+        100% {
+          left: 0;
+        }
+      }
+
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid rgba(148, 131, 36, 0.329);
+        text-align: left;
+        padding: 8px;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 20px;
+        box-shadow: 0px 0px 60px 5px rgba(180, 93, 221, 0.603);
+      }
+
+      th {
+        background-color: rgba(27, 177, 204, 0.562);
+        color: rgb(240, 240, 240);
+      }
+
+      tr {
+        background-color: rgba(126, 53, 175, 0.644);
+        color: rgb(255, 255, 255);
+      }
+
+      tr:hover :not(th) {
+        color: rgb(38, 231, 13);
+        cursor: pointer;
+      }
+
+      img {
+        width: 25px;
+        height: auto;
+      }
+
+      #item2 {
+        padding: 20px;
+      }
+
+      #item3 {
+        padding-top: 100px;
+      }
+
+      @media screen and (max-width: 900px) {
+        .grid-container {
+          grid-template-columns: auto;
+        }
+
+        .grid-footer {
+          grid-template-areas:
+            'menu main'
+            'menu main'
+            'right right';
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .grid-footer {
+          grid-template-areas:
+            'menu'
+            'main'
+            'right';
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="ulHeader">
+          <li>
+            <a href="#aboutme">About me</a>
+          </li>
+          <li>
+            <a href="#weblabs">Web Labs</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <a id="home"></a>
+      <div class="perso">
+        <video autoplay muted loop plays-inline id="myVideo">
+          <source src="production ID_4379020.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+        </video>
+        <h1 style="color: rgb(255, 255, 255); font-family: 'Charm'; font-size: 52px;">Personal Profile for Andrea Tafesh -202006066</h1>
+        <div class="container">
+          <div class="slider">
+            <figure>
+              <div class="slide">
+                <img src="SCOUT.jpg" alt="andre">
+              </div>
+              <div class="slide">
+                <img src="ANDRE1.jpg" alt="andre">
+              </div>
+              <div class="slide">
+                <img src="ANDRE2.jpg" alt="andre">
+              </div>
+              <div class="slide">
+                <img src="ANDRE3.jpg" alt="andre">
+              </div>
+            </figure>
+          </div>
+          <h2 id="aboutme" style="color: rgb(255, 255, 255); font-family: 'Charm'; font-size: 52px;"> About me</h2>
+          <div class="grid-container">
+            <div id="div1">
+              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
+                <span style="color:rgba(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> Personal INFO <br>
+                </span> Full name : Andrea Sami George Tafish <br>
+                <img src="clipart129148.png" alt="phone"> Major: Software Engineering <br>
+                <img src="phone-icon-png--clipart-best-17.png" alt="phone">Home Phone: 022747913 <br>
+                <img src="PngItem_1217280.png" alt="phone" style="width: 15px;"> Mobile Phone: 0598667311 <br>
+                <img src="birthday-3623583-3027964.png" alt="cake">Date of birth: 2/5/2002 <br>
+                <img src="home-2-512.png" alt="home">Location: Bethlehem, Palestine </span>
+            </div>
+            <div id="div2">
+              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
+                <span style="color:rgb(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> Hobbies <br>
+                </span> I like gaming, scouting, watching TV, listening to music, jogging, card games. </span>
+            </div>
+            <div id="div3">
+              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
+                <span style="color:rgb(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> University life <br>
+                </span> I chose BU, because from a future perspective Bethlehem university satisfied my needs where I want to be and what I want to be in my future career, and from a personal perspective I’ am comfortable with the general atmosphere it provides and the religious/political parties it’s involved in, and finally I chose this university to be close to my home and life which makes travelling and things easier to me making it the perfect university to me. </span>
+            </div>
+            <div id="div4">
+              <span style="font-family: 'Times New Roman', serif; font-size:25px;">
+                <span style="color:rgb(255, 251, 0, 0.753);  font-family: 'Times New Roman', serif; font-size:50px;"> Software Engineering <br>
+                </span> Software engineering is a systematic engineering approach to software development. A software engineer is a person who applies the principles of software engineering to design, develop, maintain, test, and evaluate computer software. </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="grid-footer">
+        <div class="item1"> Here are some links <ul id="ulSection">
+            <li>
+              <a href="https://www.instagram.com/andreabandak210/" target="_blank">
+                <img src="—Pngtree—instagram icon instagram logo_3584852.png" alt="insta">
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/andrea.bandak.9/" target="_blank">
+                <img src="small-facebook-logo-blue-circle.png" alt="facebook">
+              </a>
+            </li>
+            <li>
+              <a href="https://discord.com/users/andrea879#0741" target="_blank">
+                <img src="kisspng-discord-computer-icons-android-download-discord-5b348fac5a71a0.9670078115301713083705.png" alt="discord">
+              </a>
+            </li>
+            <li></li>
+          </ul>
+          <div> QR code for Snapchat <br>
+            <img src="314415552_1554196364990140_5087000762065906209_n.jpg" alt="snap" style=" width: 200px; height: 200px;">
+          </div>
+        </div>
+        <div class="item2" id="item2">
+          <h3 id="weblabs" style="color: rgb(255, 255, 255); font-family: 'Charm'; font-size: 52px;"> Web Labs</h3>
+          <table>
+            <tr>
+              <th>Time course</th>
+              <th>Hyper link</th>
+            </tr>
+            <tr>
+              <td>Week1</td>
+              <td><a href="lab.html" target="_blank">Lab1
+              </a></td>
+            </tr>
+            <tr>
+              <td>Week2</td>
+              <td><a href="lab2.html" target="_blank">
+                Lab2
+              </a>
+              </td>
+            </tr>
+            <tr>
+              <td>Week3</td>
+              <td><a href="lab3.html" target="_blank">Lab3
+
+              </a></td>
+            </tr>
+            <tr>
+              <td>Week4</td>
+              <td><a href="lab4.html" target="_blank">Lab4
+
+              </a></td>
+            </tr>
+            <tr>
+              <td>Week5</td>
+              <td><a href="lab5.html" target="_blank">Lab5
+
+              </a></td>
+            </tr>
+            <tr>
+              <td>Week6</td>
+              <td><a href="lab6.html" target="_blank">
+                Lab6
+              </a></td>
+            </tr>
+          </table>
+        </div>
+        <div class="item3" id="item3"> Contact me at: <br>
+          <img id="contact" src="transparent-email-icon-envenlope-icon-letter-icon-5db0d083b91f22.7579223115718688037583.jpg" alt="email">Email Address: <a href="202006066@bethlehem.edu" target="_blank">202006066@bethlehem.edu</a>
+          <br>
+          <img src="PngItem_5043553.png" alt="whatsapp"> Whatsapp: +972 598667311 <br>
+          <img src="andrea-signature.png" alt="andre" style=" width: 200px; height: auto;">
+          <br> 2022 &#169;
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
